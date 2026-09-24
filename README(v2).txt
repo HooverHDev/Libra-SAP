@@ -1,26 +1,62 @@
-LIBRA'S Construccion - Guia de Instalacion y Cambios
-=====================================================
+# LIBRA'S Construcción
 
-REQUISITOS
------------------------
+Sistema web para la gestión y venta de productos de una empresa de materiales de construcción.
 
-Tener - Node.js v18 instalado
+## 🚀 Demo
 
-INICIAR EL SERVIDOR DESDE TERMINAL
------------------------
+[Ver aplicación en línea](https://hooverhdev.github.io/Libra-SAP/)
 
-Comando: node app.js
+## 🛠️ Tecnologías
 
-Servidor listo en http://localhost:3000
+- Node.js
+- JavaScript
+- HTML
+- CSS
+- Base de datos
 
-RESUMEN DE CAMBIOS REALIZADOS
-----------------------------------
- 
-Reorganización de archivos
-Filtros de productos (sidebar)
-Sistema de usuarios
-Pagina de perfil de usuario
-Carrusel en el hero
-Pagina de producto mejorada
-Pagina de pedido provisional
-Productos en la base de datos
+## ✨ Funcionalidades
+
+- Catálogo de productos
+- Búsqueda de productos
+- Filtros por categoría y precio
+- Sistema de usuarios
+- Perfil de usuario
+- Carrusel de productos en la página principal
+- Página detallada de productos
+- Gestión de pedidos
+- Productos almacenados en base de datos
+
+## 📸 Capturas
+
+### Página principal
+
+![Página principal](docs/screenshots/inicio.png)
+
+### Catálogo y filtros
+
+![Catálogo](docs/screenshots/catalogo.png)
+
+### Página de producto
+
+![Producto](docs/screenshots/producto.png)
+
+### Perfil de usuario
+
+![Perfil](docs/screenshots/perfil.png)
+
+### Pedidos
+
+![Pedidos](docs/screenshots/pedido.png)
+
+## ⚙️ Instalación
+
+### Requisitos
+
+- Node.js 18 o superior
+
+### Ejecución
+
+Clonar el repositorio:
+
+```bash
+git clone https://github.com/hooverhdev/Libra-SAP.git
