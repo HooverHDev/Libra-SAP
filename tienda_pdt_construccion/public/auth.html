@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Acceder - LIBRA'S Construcción</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="icon" href="favicon.png" type="image/png">
+</head>
+<body>
+
+    <!-- HEADER -->
+    <header>
+        <div class="header-inner">
+            <a href="/index.html" style="text-decoration:none;">
+                <h1>LIBRA'S <span>Construcción</span></h1>
+            </a>
+        </div>
+    </header>
+
+    <!-- AUTH PAGE -->
+    <div class="auth-page">
+        <div class="auth-box">
+
+            <!-- TABS -->
+<div class="modal-tabs">
+    <button class="tab activo" id="tabLogin">Iniciar sesión</button>
+    <button class="tab" id="tabRegister">Registrarse</button>
+</div>
+
+<!-- LOGIN -->
+<div id="formLogin">
+    <div class="input-group">
+        <label>Correo</label>
+        <input type="email" id="loginCorreo" placeholder="tu@correo.com">
+    </div>
+    <div class="input-group">
+        <label>Contraseña</label>
+        <input type="password" id="loginPassword" placeholder="••••••••">
+    </div>
+    <p class="auth-error" id="loginError"></p>
+    <button class="btn-submit" id="btnLogin">Ingresar</button>
+</div>
+
+<!-- REGISTRO -->
+<div id="formRegister" style="display:none;">
+    <div class="input-group">
+        <label>Nombre completo</label>
+        <input type="text" id="regNombre" placeholder="Juan Pérez">
+    </div>
+    <div class="input-group">
+        <label>Correo</label>
+        <input type="email" id="regCorreo" placeholder="tu@correo.com">
+    </div>
+    <div class="input-group">
+        <label>Contraseña</label>
+        <input type="password" id="regPassword" placeholder="••••••••">
+    </div>
+    <div class="input-group">
+        <label>Teléfono</label>
+        <input type="text" id="regTelefono" placeholder="999 999 999">
+    </div>
+    <div class="input-group">
+        <label>Dirección de entrega</label>
+        <input type="text" id="regDireccion" placeholder="Av. Principal 123">
+    </div>
+    <p class="auth-error" id="registerError"></p>
+    <button class="btn-submit" id="btnRegister">Crear cuenta</button>
+</div>
+
+        </div>
+    </div>
+
+    <script src="/js/auth.js"></script>
+</body>
+</html>
+
+<style>
+.auth-page {
+    min-height: calc(100vh - 80px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #f5f0eb;
+    padding: 2rem 1rem;
+}
+
+.auth-box {
+    background: #fff;
+    border-radius: 16px;
+    padding: 2.5rem;
+    width: 100%;
+    max-width: 440px;
+    box-shadow: 0 8px 40px rgba(0,0,0,0.10);
+}
+</style>
