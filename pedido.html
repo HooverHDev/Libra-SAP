@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Confirmar Pedido - LIBRA'S Construcción</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="icon" href="favicon.png" type="image/png">
+</head>
+<body>
+
+    <header>
+        <div class="header-inner">
+            <a href="/index.html" style="text-decoration:none;">
+                <h1>LIBRA'S <span>Construcción</span></h1>
+            </a>
+        </div>
+    </header>
+
+    <div class="auth-page">
+        <div class="auth-box" style="max-width: 540px;">
+
+            <h2 style="margin-bottom:1.5rem; font-size:1.3rem;">🛒 Confirmar Pedido</h2>
+
+            <!-- Resumen del producto -->
+            <div class="pedido-resumen">
+                <img id="pedidoImg" src="" alt="" class="pedido-img">
+                <div>
+                    <p id="pedidoNombre" style="font-weight:700; font-size:1rem;"></p>
+                    <p id="pedidoCantidad" style="color:#888; font-size:0.9rem;"></p>
+                    <p id="pedidoTotal" style="color:#e8620a; font-weight:700; font-size:1.1rem;"></p>
+                </div>
+            </div>
+
+            <div class="footer-divider" style="margin:1.2rem 0;"></div>
+
+            <h3 style="font-size:1rem; margin-bottom:1rem; color:#555;">📍 Datos de entrega</h3>
+
+            <div class="input-group">
+                <label>Nombre completo</label>
+                <input type="text" id="pedidoNombreInput">
+            </div>
+            <div class="input-group">
+                <label>Teléfono</label>
+                <input type="text" id="pedidoTelefono">
+            </div>
+            <div class="input-group">
+                <label>Dirección de entrega</label>
+                <input type="text" id="pedidoDireccion">
+            </div>
+
+            <p class="auth-error" id="pedidoError"></p>
+
+            <button class="btn-submit" id="btnConfirmar">Confirmar pedido</button>
+
+            <!-- ÉXITO -->
+            <div id="pedidoExito" style="display:none; text-align:center; padding:1.5rem 0;">
+                <div style="font-size:3rem;">✅</div>
+                <h3 style="margin:0.5rem 0;">¡Pedido recibido!</h3>
+                <p style="color:#888;">Te contactaremos pronto al número ingresado para coordinar la entrega.</p>
+                <a href="/index.html" class="btn-submit" style="display:inline-block; margin-top:1rem; text-decoration:none;">Volver al catálogo</a>
+            </div>
+
+        </div>
+    </div>
+
+    <script src="/js/pedido.js"></script>
+</body>
+</html>

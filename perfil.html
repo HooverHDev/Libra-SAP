@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Perfil - LIBRA'S Construcción</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="icon" href="favicon.png" type="image/png">
+</head>
+<body>
+
+    <!-- HEADER -->
+    <header>
+        <div class="header-inner">
+            <a href="/index.html" style="text-decoration:none;">
+                <h1>LIBRA'S <span>Construcción</span></h1>
+            </a>
+            <div class="header-auth">
+                <button id="btnAuth">Iniciar sesión</button>
+                <div id="userMenu" class="user-menu">
+                    <a id="btnPerfil" href="/perfil.html">👤 Mi perfil</a>
+                    <hr>
+                    <a id="btnCerrarSesion" href="#">🚪 Cerrar sesión</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- PERFIL -->
+    <div class="auth-page">
+        <div class="auth-box" style="max-width: 520px;">
+            <div class="perfil-header">
+                <div class="perfil-avatar">👤</div>
+                <div>
+                    <h2 id="perfilNombre">Cargando...</h2>
+                    <p id="perfilCorreo" class="perfil-correo"></p>
+                </div>
+            </div>
+
+            <div class="footer-divider" style="margin: 1.5rem 0;"></div>
+
+            <div class="perfil-datos">
+                <div class="perfil-fila">
+                    <span class="perfil-label">📞 Teléfono</span>
+                    <span id="perfilTelefono" class="perfil-valor">—</span>
+                </div>
+                <div class="perfil-fila">
+                    <span class="perfil-label">📍 Dirección</span>
+                    <span id="perfilDireccion" class="perfil-valor">—</span>
+                </div>
+                <div class="perfil-fila">
+                    <span class="perfil-label">📅 Miembro desde</span>
+                    <span id="perfilFecha" class="perfil-valor">—</span>
+                </div>
+            </div>
+
+            <div class="footer-divider" style="margin: 1.5rem 0;"></div>
+
+            <button class="btn-submit" id="btnCerrarSesionPerfil">🚪 Cerrar sesión</button>
+        </div>
+    </div>
+
+    <script src="/js/perfil.js"></script>
+</body>
+</html>

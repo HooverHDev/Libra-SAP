@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tienda online - Materiales de Construcción</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="icon" href="favicon.png" type="image/png">
+
+</head>
+<body>
+
+    <!-- HEADER -->
+   <!-- HEADER -->
+<header>
+    <div class="header-inner">
+        <h1>LIBRA'S <span>Construcción</span></h1>
+        <div class="search-container">
+            <input type="text" id="searchInput" placeholder="Buscar cemento, ladrillos, fierros...">
+            <button id="searchBtn">Buscar</button>
+        </div>
+        <div class="header-auth">
+    <button id="btnAuth">Iniciar sesión</button>
+    <div id="userMenu" class="user-menu">
+        <a href="/perfil.html">👤 Mi perfil</a>
+        <hr>
+        <a id="btnCerrarSesion" href="#">🚪 Cerrar sesión</a>
+    </div>
+</div>
+    </div>
+</header>
+
+</header>
+
+    <!-- HERO -->
+    <section class="hero">
+
+    <!-- SLIDES -->
+    <div class="hero-slide activo" style="background-image: url('https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=1600&q=80')"></div>
+    <div class="hero-slide" style="background-image: url('https://images.unsplash.com/photo-1590579491624-f98f36d4c763?w=1600&q=80')"></div>
+    <div class="hero-slide" style="background-image: url('https://images.unsplash.com/photo-1541888946425-d81bb19240f5?w=1600&q=80')"></div>
+    <div class="hero-slide" style="background-image: url('https://images.unsplash.com/photo-1512207736890-6ffed8a84e8d?w=1600&q=80')"></div>
+
+    <div class="hero-overlay"></div>
+
+    <div class="hero-content">
+        <span class="hero-eyebrow">Materiales de Primera Calidad</span>
+        <h2>Construye tu Hogar con los mejores materiales</h2>
+        <p>Calidad premium para obras que perduran toda la vida.</p>
+        <a href="#productosContainer" class="cta-button">Ver Productos →</a>
+    </div>
+
+</section>
+
+
+    <!-- PRODUCTOS -->
+<div class="layout-productos">
+
+    <!-- SIDEBAR -->
+    <aside class="sidebar-filtros">
+        <h3>Filtrar</h3>
+
+        <div class="filtro-grupo">
+            <h4>Categoría</h4>
+            <ul class="filtro-categorias">
+                <li><button class="filtro-cat activo" data-cat="">Todas</button></li>
+                <li><button class="filtro-cat" data-cat="Estructuras">Estructuras</button></li>
+                <li><button class="filtro-cat" data-cat="Mezclas">Mezclas</button></li>
+                <li><button class="filtro-cat" data-cat="Herramientas">Herramientas</button></li>
+                <li><button class="filtro-cat" data-cat="Gasfitería">Gasfitería</button></li>
+            </ul>
+        </div>
+
+        <div class="filtro-grupo">
+            <h4>Precio máximo</h4>
+            <input type="range" id="sliderPrecio" min="0" max="200" value="200" step="5">
+            <p class="precio-label">Hasta: <strong id="valorPrecio">S/ 200</strong></p>
+        </div>
+    </aside>
+
+    <!-- CONTENIDO -->
+    <main>
+        <p class="section-title">Productos Destacados</p>
+        <p class="section-subtitle">Encuentra todo lo que necesitas para tu proyecto</p>
+        <div id="productosContainer"></div>
+    </main>
+
+</div>
+
+    <script src="/js/scripts.js"></script>
+    <!-- CATEGORÍAS -->
+    <section class="categorias-destacadas">
+        <h3>Explora por Categoría</h3>
+        <p class="section-desc">Todo lo que tu obra necesita, en un solo lugar.</p>
+        <div class="categorias-grid">
+            <div class="categoria-item">
+                <div class="icon-circle">🏗️</div>
+                <h4>Estructuras</h4>
+                <p>Fierros, ladrillos y cemento para la base de tu obra.</p>
+            </div>
+            <div class="categoria-item">
+                <div class="icon-circle">🔧</div>
+                <h4>Herramientas</h4>
+                <p>Equipos profesionales para cada etapa del proyecto.</p>
+            </div>
+            <div class="categoria-item">
+                <div class="icon-circle">🎨</div>
+                <h4>Acabados</h4>
+                <p>Pinturas y revestimientos con estilo único.</p>
+            </div>
+            <div class="categoria-item">
+                <div class="icon-circle">💧</div>
+                <h4>Gasfitería</h4>
+                <p>Tuberías y conexiones de alta resistencia.</p>
+            </div>
+        </div>
+    </section>
+
+    <script>
+    document.addEventListener("DOMContentLoaded", () => {
+        const btnCerrar = document.getElementById("btnCerrarSesion");
+        if (btnCerrar) btnCerrar.addEventListener("click", cerrarSesion);
+    });
+    </script>
+
+    <!-- FOOTER -->
+    <footer>
+        <p class="footer-brand">LIBRA'S <span>Construcción</span></p>
+        <div class="footer-divider"></div>
+        <p>&copy; 2026 Materiales de Construcción "LIBRA'S" — Todos los derechos reservados.</p>
+        <p>Desarrollado con estándares de seguridad SQLi y XSS.</p>
+    </footer>
+
+
+</body>
+</html>

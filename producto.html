@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detalle del Producto - LIBRA'S Construcción</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+
+    <!-- HEADER -->
+    <header>
+        <div class="header-inner">
+            <h1>LIBRA'S <span>Construcción</span></h1>
+            <a href="index.html" class="back-link">← Volver al catálogo</a>
+        </div>
+    </header>
+
+    <!-- BREADCRUMB -->
+    <div class="breadcrumb-bar">
+        <div class="breadcrumb-inner">
+            <a href="index.html">Inicio</a>
+            <span class="breadcrumb-sep">/</span>
+            <span id="breadcrumbCategoria">Categoría</span>
+            <span class="breadcrumb-sep">/</span>
+            <span id="breadcrumbNombre" class="breadcrumb-current">Producto</span>
+        </div>
+    </div>
+
+    <!-- DETALLE -->
+    <main id="detalleContainer" class="container-detalle">
+        <div id="cargando" class="loading-state">
+            <div class="loading-spinner"></div>
+            <p>Cargando información técnica...</p>
+        </div>
+    </main>
+
+    <script src="/js/producto.js"></script>
+</body>
+</html>
